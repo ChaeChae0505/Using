@@ -5,7 +5,7 @@ clicks = list()
 click = list()
 import csv
 #%%Functions
-'PLease dont modify this section'
+## 'PLease dont modify this section'
 def mouse_callback(event, x, y, flags, params):
 
     if event == 1:
