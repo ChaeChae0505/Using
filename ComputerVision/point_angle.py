@@ -1,3 +1,7 @@
+"""
+manually get the points! 
+and save the csv!
+"""
 import os, cv2
 from win32api import GetSystemMetrics
 import numpy as np
