@@ -3,7 +3,8 @@
 - [ ] Binalization (thresh)
 - [ ] point clicking for making dataset 
 
-# Vision task
+# Vision task [수정 중]
+
 ## Library of python vision 
 1. PIL(Pillow, Python Image) : slow,,,
 2. Sckit-Image : Scipy , Numpy based
