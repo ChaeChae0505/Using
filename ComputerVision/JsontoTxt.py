@@ -14,6 +14,18 @@ from os import walk, getcwd
 from PIL import Image
 
 def convert(size, box):
+    """
+    x = round((b[0] + b[1])/2, 5) # b_center_x
+    y = round((b[2] + b[3])/2, 5) #b_center_y
+    w = round((b[1] - b[0]), 5) #b_width
+    h = round((b[3] - b[2]), 5) #b_height
+    image_w, image_h = size
+    x /= image_w #b_center_x
+    y /= image_h #b_center_y
+    w /= image_w #b_width
+    h /= image_h #b_height
+    
+    """
     dw = 1./size[0]
     dh = 1./size[1]
     x = (box[0] + box[1])/2.0
@@ -25,6 +37,7 @@ def convert(size, box):
     y = y*dh
     h = h*dh
     return (x,y,w,h)
+
     
     
 """-------------------------------------------------------------------""" 
